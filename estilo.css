@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+height: 100vh;
+width: 100%;
+background: #3AA2DD;
+background: -moz-linear-gradient(top, #3AA2DD 0%, #18435C 50%, #000000 100%);
+background: -webkit-linear-gradient(top, #3AA2DD 0%, #18435C 50%, #000000 100%);
+background: linear-gradient(to bottom, #3AA2DD 0%, #18435C 50%, #000000 100%);
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.cenario{
+    background: url(./cenário/cenario-sprite.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    animation: slideRight;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes slideRight{
+
+    to{background-position:0;}
+
+    from{background-position:700%;}
+
+}
+
+.heroi{
+    height: 175px;
+    width: 190px;
+    background:url(./personagens/heroi-sprite01.png) ;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 100;
+    animation: heroiAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 250ms;
+
+
+}
+
+@keyframes heroiAnimation {
+
+    from{background-image: url(./personagens/heroi-sprite01.png);}
+    
+    to{background-image: url(./personagens/heroi-sprite02.png)}
+    }
+
+
+.cyclope{
+    height: 175px;
+    width: 190px;
+    background-image:url(./personagens/ciclope-sprite01.png) ;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 33px;
+    animation: cyclopeAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 300ms;
+}
+
+@keyframes cyclopeAnimation {
+
+from{background-image: url(./personagens/ciclope-sprite01.png);}
+
+to{background-image: url(./personagens/ciclope-sprite02.png)}
+}
+
+
+.score{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 110px;
+}
+
+.valor{
+
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+
+}
+
+.game-over{
+
+    font-family: 'Press Start 2P', cursive;
+    font-size:30px;
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+
+}

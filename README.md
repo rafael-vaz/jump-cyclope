@@ -19,5 +19,5 @@ Está preparado para o desafio?
 
 Pule quantos ciclopes conseguir, acumulando o máximo de pontos!
 
-https://jump-cyclope.netlify.app/
+https://rafael-vaz.github.io/jump-cyclope/
 
